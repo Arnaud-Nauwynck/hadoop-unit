@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.jetoile.hadoop</groupId>
@@ -65,6 +64,7 @@
         <module>hadoop-unit-elasticsearch</module>
         <module>hadoop-unit-neo4j</module>
         <module>hadoop-unit-knox</module>
+        <module>hadoop-unit-ranger</module>
         <module>hadoop-unit-alluxio</module>
         <module>hadoop-unit-windowslibs</module>
         <module>hadoop-unit-redis</module>
@@ -72,7 +72,7 @@
         <module>hadoop-unit-confluent-rest</module>
         <module>sample</module>
         <module>hadoop-unit-site</module>
-    </modules>
+  </modules>
 
     <repositories>
         <repository>
@@ -146,6 +146,7 @@
         <oozie.version>4.2.0.2.6.3.0-235</oozie.version>
         <hadoop.version>2.7.3.2.6.3.0-235</hadoop.version>
         <knox.version>0.12.0.2.6.3.0-235</knox.version>
+        <ranger.version>2.0.0-SNAPSHOT</ranger.version>
         <kafka_2.10.version>0.10.1.2.6.3.0-235</kafka_2.10.version>
 
         <confluent.version>5.0.0</confluent.version>
@@ -494,6 +495,17 @@
                 <groupId>org.apache.knox</groupId>
                 <artifactId>gateway-service-hbase</artifactId>
                 <version>${knox.version}</version>
+            </dependency>
+			<dependency>
+		        <groupId>org.apache.ranger</groupId>
+				<artifactId>embeddedwebserver</artifactId>
+                <version>${ranger.version}</version>
+			</dependency>
+            <dependency>
+                <groupId>org.apache.ranger</groupId>
+                <artifactId>security-admin-web</artifactId>
+                <version>${ranger.version}</version>
+                <type>war</type>
             </dependency>
 
             <dependency>

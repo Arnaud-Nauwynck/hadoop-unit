@@ -175,6 +175,13 @@ public class HadoopUnitConfig {
     public static final String KNOX_HOME_DIR_KEY = "knox.home.dir";
     public static final String KNOX_SERVICE_KEY = "knox.service";
 
+    //Ranger
+    public static final String RANGER_HOST_KEY = "ranger.host";
+    public static final String RANGER_PORT_KEY = "ranger.port";
+    public static final String RANGER_JPA_JDBC_URL_KEY = "ranger.jpa.jdbc.url";
+    public static final String RANGER_JPA_JDBC_USER_KEY = "ranger.jpa.jdbc.user";
+    public static final String RANGER_JPA_JDBC_PASSWORD_KEY = "ranger.jpa.jdbc.password";
+
     //Redis
     public static final String REDIS_PORT_KEY = "redis.port";
     public static final String REDIS_DOWNLOAD_URL_KEY = "redis.download.url";

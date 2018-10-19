@@ -36,6 +36,7 @@ public enum Component {
     ELASTICSEARCH("elasticsearch", "fr.jetoile.hadoopunit.component.ElasticSearchBootstrap", "elasticsearch.artifact"),
     NEO4J("neo4j", "fr.jetoile.hadoopunit.component.Neo4jBootstrap", "neo4j.artifact"),
     KNOX("knox", "fr.jetoile.hadoopunit.component.KnoxBootstrap", "knox.artifact"),
+    RANGER("ranger", "fr.jetoile.hadoopunit.component.RangerBootstrap", "ranger.artifact"),
     REDIS("redis", "fr.jetoile.hadoopunit.component.RedisBootstrap", "redis.artifact"),
     CONFLUENT_KAFKA("confluent_kafka", "fr.jetoile.hadoopunit.component.ConfluentKafkaBootstrap", "confluent.kafka.artifact"),
     CONFLUENT_SCHEMAREGISTRY("confluent_schemaregistry", "fr.jetoile.hadoopunit.component.ConfluentSchemaRegistryBootstrap", "confluent.schemaregistry.artifact"),
